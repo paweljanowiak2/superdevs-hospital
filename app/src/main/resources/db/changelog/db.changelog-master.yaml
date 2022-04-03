@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20220403_initial_schema
+      author: Paweł Janowiak
+      sqlFile:
+        relativeToChangelogFile: true
+        path: 20220403_initial_schema.sql
+  - changeSet:
+      id: 20220403_random_data
+      author: Paweł Janowiak
+      sqlFile:
+        relativeToChangelogFile: true
+        path: 20220403_random_data.sql

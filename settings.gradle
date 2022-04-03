@@ -1,0 +1,3 @@
+rootProject.name = 'superdevs-hospital-migration-java'
+
+include ':app'
