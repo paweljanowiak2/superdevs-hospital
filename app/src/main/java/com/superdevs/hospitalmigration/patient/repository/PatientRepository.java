@@ -16,6 +16,6 @@ public interface PatientRepository extends CrudRepository<Patient, Long> {
     List<Patient> selectAllUpToYearsOld(@Param("ageUpperBoundary") int ageUpperBoundary);
 
     @Modifying
-    @Query("delete from Patient p where p.lastVisitDate >= :from and p.lastVisitDate < :to")
+    @Query("delete from Patient p where p.lastVisitDate >= :from and p.lastVisitDate <= :to")
     int deletePatientsLastVisitedBetween(@Param("from") LocalDate from, @Param("to") LocalDate to);
 }

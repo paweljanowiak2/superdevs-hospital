@@ -8,6 +8,7 @@ databaseChangeLog:
   - changeSet:
       id: 20220403_random_data
       author: Paweł Janowiak
+      context: prod
       sqlFile:
         relativeToChangelogFile: true
         path: 20220403_random_data.sql
