@@ -2,11 +2,12 @@ Postman collection: https://www.postman.com/research-meteorologist-93401167/work
 
 Setup: 
 
-1. Create database hospital, username: pjanowiak/pjanowiak or reconfigure spring boot.
-2. Create first staff member using code generated at the startup e.g.
+1. Create database hospital, hostpital_test username: pjanowiak/pjanowiak or reconfigure spring boot.
+2. Now you can build the app.
+3. Create first staff member using code generated at the startup e.g.
     ```
    2022-04-03 23:57:32.173  INFO 52594 --- [           main] com.superdevs.hospitalmigration.App      : INITIAL SECURITY KEY IS: 83f547a6-20a6-4012-8f15-104ff086f586
    ```
    '83f547a6-20a6-4012-8f15-104ff086f586' code should be used as initial x-staff-uuid header.
-3. I would be glad if we can discuss any issues with the code. It is based on some assumptions and style. 
-4. Tests use the same database as "production one".
+4. I would be glad if we can discuss any issues with the code. It is based on some assumptions and style. 
+5. Note: application.properties can be written using profiles, but I needed to save time.
